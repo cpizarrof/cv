@@ -4,280 +4,159 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Carlos Pizarro Fuentes · Currículum</title>
-<meta name="description" content="Carlos Pizarro Fuentes — Estudiante de Ingeniería Estadística, Universidad de Santiago de Chile. Análisis de datos y estadística aplicada en R y Python.">
-
+<meta name="description" content="Carlos Pizarro Fuentes, estudiante de Ingeniería Estadística en la Universidad de Santiago de Chile.">
 <meta property="og:type" content="profile">
 <meta property="og:site_name" content="Carlos Pizarro Fuentes">
 <meta property="og:title" content="Carlos Pizarro Fuentes · Currículum">
-<meta property="og:description" content="Estudiante de Ingeniería Estadística en la Universidad de Santiago de Chile. Análisis de datos y estadística aplicada en R y Python.">
+<meta property="og:description" content="Estudiante de Ingeniería Estadística en la Universidad de Santiago de Chile.">
 <meta property="og:url" content="https://cpizarrof.github.io/cv/">
 <meta property="og:image" content="https://cpizarrof.github.io/cv/preview.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <style>
-:root{
-  --azul:#1C3D6E; --azul-hondo:#0E2446; --cobre:#B4652A; --cobre-claro:#D9A566;
-  --arena:#FAF7F0; --tinta:#1B2330; --grafito:#3B4657; --pizarra:#5C687A;
-  --linea:#DCD5C5;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-body{
-  background:#E9E4DA; color:var(--tinta);
-  font-family:Montserrat,-apple-system,"Segoe UI",sans-serif;
-  font-size:15px; line-height:1.55; padding:28px 16px;
-}
-.hoja{
-  max-width:830px; margin:0 auto; background:var(--arena);
-  box-shadow:0 2px 20px rgba(27,35,48,.13); border-radius:3px; overflow:hidden;
-}
-
-/* ---------- cabecera ---------- */
-.cab{background:var(--azul-hondo); color:var(--arena); padding:34px 46px 30px;
-     position:relative; overflow:hidden}
-.cab::after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;
-     background:linear-gradient(90deg,var(--azul) 0%,var(--cobre) 48%,var(--cobre-claro) 100%)}
-.cab h1{font-size:35px;font-weight:800;letter-spacing:-.02em;line-height:1.05}
-.cab .rol{font-size:14px;font-weight:600;letter-spacing:.20em;text-transform:uppercase;
-     color:var(--cobre-claro);margin-top:9px}
-.datos{margin-top:19px;display:flex;flex-wrap:wrap;gap:7px 22px;
-     font-size:13.5px;color:#C3D0E2}
-.datos a{color:#C3D0E2;text-decoration:none;border-bottom:1px solid rgba(217,165,102,.5)}
-.datos a:hover{color:#fff}
-.datos span::before{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;
-     background:var(--cobre-claro);margin-right:9px;vertical-align:2px}
-
-/* ---------- cuerpo ---------- */
-.cuerpo{padding:34px 46px 40px}
-section{margin-bottom:27px}
-h2{font-size:12.5px;font-weight:800;letter-spacing:.17em;text-transform:uppercase;
-   color:var(--azul);padding-bottom:7px;border-bottom:2px solid var(--linea);
-   margin-bottom:15px;position:relative}
-h2::after{content:"";position:absolute;left:0;bottom:-2px;width:46px;height:2px;background:var(--cobre)}
-
-.perfil{font-size:14.5px;color:var(--grafito);line-height:1.65}
-.perfil b{color:var(--tinta);font-weight:600}
-
-/* entradas */
-.ent{margin-bottom:17px}
-.ent:last-child{margin-bottom:0}
-.ent-cab{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
-.ent-tit{font-size:15px;font-weight:700;color:var(--azul-hondo)}
-.ent-fecha{font-size:12.5px;font-weight:600;color:var(--pizarra);white-space:nowrap}
-.ent-org{font-size:13.5px;font-weight:500;color:var(--cobre);margin-top:1px}
-.ent-txt{font-size:13.8px;color:var(--grafito);margin-top:5px;line-height:1.55}
-
-/* proyectos */
-.proy{border-left:3px solid var(--linea);padding-left:16px;margin-bottom:19px}
-.proy:last-child{margin-bottom:0}
-.proy .ent-tit a{color:var(--azul-hondo);text-decoration:none}
-.proy .ent-tit a:hover{color:var(--cobre)}
-.proy .met{font-size:13.8px;color:var(--grafito);margin-top:5px;line-height:1.55}
-.proy .met b{color:var(--azul-hondo);font-weight:700}
-.proy .tec{font-size:12.5px;color:var(--pizarra);margin-top:6px;font-style:normal}
-.proy .liga{font-size:12.5px;font-weight:600;margin-top:6px}
-.proy .liga a{color:var(--cobre);text-decoration:none;border-bottom:1px solid rgba(180,101,42,.35)}
-
-/* habilidades */
-.hab{display:grid;grid-template-columns:150px 1fr;gap:9px 18px;font-size:13.8px}
-.hab dt{font-weight:700;color:var(--azul-hondo)}
-.hab dd{color:var(--grafito)}
-
-.pie{font-size:12.5px;color:var(--pizarra);text-align:center;
-     padding:16px 46px 26px;border-top:1px solid var(--linea)}
-.descarga{display:inline-block;font-size:13px;font-weight:600;text-decoration:none;
-     color:var(--arena);background:var(--cobre);padding:9px 22px;border-radius:3px;
-     letter-spacing:.03em}
-.descarga:hover{background:var(--azul-hondo)}
-
-.solo-print{display:none !important}
-
-/* ---------- impresión ---------- */
-@page{size:A4;margin:9mm 13mm}
-@media print{
-  body{background:#fff;padding:0;font-size:9.2pt;line-height:1.38}
-  .hoja{max-width:none;box-shadow:none;border-radius:0;background:#fff}
-  .cab{padding:0 0 8px;background:#fff;color:var(--tinta)}
-  .cab::after{display:none}
-  .cab h1{font-size:19pt;color:var(--azul-hondo)}
-  .cab .rol{font-size:9pt;color:var(--cobre);margin-top:5px}
-  .datos{margin-top:7px;color:var(--grafito);font-size:8.7pt;gap:3px 14px;
-         border-top:2px solid var(--cobre);padding-top:6px}
-  .datos a{color:var(--grafito);border:none}
-  .datos span::before{background:var(--cobre)}
-  .cuerpo{padding:11px 0 0}
-  section{margin-bottom:7px}
-  h2{font-size:7.8pt;margin-bottom:6px;padding-bottom:3px}
-  .perfil{font-size:8.8pt;line-height:1.45}
-  .ent{margin-bottom:6px}
-  .ent-tit{font-size:10pt}
-  .ent-org{font-size:9pt}
-  .ent-txt,.proy .met{font-size:8.7pt;line-height:1.34}
-  .ent-fecha{font-size:8.5pt}
-  .proy{margin-bottom:6px;padding-left:10px}
-  .proy .tec,.proy .liga{font-size:8.3pt;margin-top:4px}
-  .hab{font-size:9pt;grid-template-columns:118px 1fr;gap:4px 12px}
-  .pie{display:none}
-  .solo-print{display:revert !important}
-  section,.ent,.proy{break-inside:avoid}
-  a{text-decoration:none}
-}
+  :root {
+    --tinta: #1d1d1b;
+    --suave: #55534e;
+    --linea: #d8d4cc;
+    --acento: #7a3324;
+  }
+  @page { size: letter; margin: 11mm 15mm 9mm; }
+  * { box-sizing: border-box; }
+  html { background: #fff; }
+  body {
+    margin: 0 auto; max-width: 186mm; color: var(--tinta); background: #fff;
+    font: 9.4pt/1.34 "Source Sans 3", "Segoe UI", Arial, sans-serif;
+  }
+  a { color: inherit; text-decoration: none; }
+  header { border-bottom: 1.4pt solid var(--tinta); padding-bottom: 7pt; margin-bottom: 9pt; }
+  h1 { font: 600 21pt/1.1 "Source Serif 4", Georgia, serif; margin: 0 0 2pt; letter-spacing: .1pt; }
+  .titular { font-size: 10.5pt; margin: 0 0 4pt; }
+  .contacto { color: var(--suave); margin: 0; }
+  .contacto span + span::before { content: "·"; margin: 0 6pt; color: var(--linea); }
+  h2 {
+    font: 600 8.6pt/1 "Source Sans 3", Arial, sans-serif; text-transform: uppercase; letter-spacing: 1.3pt;
+    color: var(--acento); margin: 9pt 0 4pt; padding-bottom: 2.5pt; border-bottom: .6pt solid var(--linea);
+  }
+  p { margin: 0 0 4pt; }
+  .fila { display: flex; justify-content: space-between; gap: 10pt; align-items: baseline; }
+  .cargo { font-weight: 600; }
+  .fecha { color: var(--suave); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .lugar { color: var(--suave); margin: 0 0 3pt; }
+  .empresa { font: 600 10.6pt/1.2 "Source Serif 4", Georgia, serif; margin: 0 0 1pt; }
+  ul { margin: 2pt 0 6pt; padding-left: 12pt; }
+  li { margin: 0 0 2pt; padding-left: 1pt; }
+  li::marker { color: var(--suave); }
+  .bloque { margin-bottom: 4pt; break-inside: avoid; }
+  .nota { color: var(--suave); font-style: italic; }
+  .proy p { margin-bottom: 1pt; }
+  .enlace { color: var(--suave); }
+  .habil p { margin-bottom: 2pt; }
+  .habil b { font-weight: 600; }
+  @media screen {
+    body { padding: 28px 22px 40px; }
+    @media (max-width: 600px) { .fila { display: block; } .fecha { display: block; } }
+  }
+  .descarga { display: inline-block; margin-top: 16pt; padding: 6pt 12pt; border: .8pt solid var(--tinta); border-radius: 3pt; font-weight: 600; }
+  .descarga:hover { background: var(--tinta); color: #fff; }
+  @media print { .descarga { display: none; } }
 </style>
 </head>
 <body>
 
-<div class="hoja">
+<header>
+  <h1>Carlos Pizarro Fuentes</h1>
+  <p class="titular">Estudiante de Ingeniería Estadística, Universidad de Santiago de Chile</p>
+  <p class="contacto">
+    <span>Santiago, Chile</span>
+    <span><a href="mailto:carlos.pizarro.f@usach.cl">carlos.pizarro.f@usach.cl</a></span>
+    <span>+56 9 9586 1749</span>
+    <span><a href="https://github.com/cpizarrof">github.com/cpizarrof</a></span>
+  </p>
+</header>
 
-  <header class="cab">
-    <h1>Carlos Pizarro Fuentes</h1>
-    <div class="rol">Estudiante de Ingeniería Estadística</div>
-    <div class="datos">
-      <span>Santiago, Chile</span>
-      <span><a href="mailto:carlos.pizarro.f@usach.cl">carlos.pizarro.f@usach.cl</a></span>
-      <span><a href="https://github.com/cpizarrof">github.com/cpizarrof</a></span>
-      <span>+56 9 9586 1749</span>
-    </div>
-  </header>
+<section>
+  <h2>Perfil</h2>
+  <p>Estudio cuarto año de Ingeniería Estadística en la Universidad de Santiago de Chile y trabajo en la
+  imprenta de mi familia. Ahí he ido aplicando lo que aprendo en la carrera a preguntas concretas del negocio,
+  como a qué compras públicas postular o cómo fijar un precio, y en el camino he aprendido mucho sobre trabajar
+  con datos reales.</p>
+</section>
 
-  <div class="cuerpo">
+<section>
+  <h2>Experiencia</h2>
 
-    <section>
-      <h2>Perfil</h2>
-      <p class="perfil">
-        Estudiante de cuarto año de Ingeniería Estadística en la Universidad de Santiago de
-        Chile. Trabajo con <b>R</b>, <b>Python</b> y <b>SQL</b> en estadística aplicada, y documento los resultados de forma
-        reproducible con <b>Quarto</b> y <b>Git</b>. Compatibilizo los estudios con un trabajo
-        administrativo desde 2019 y clases de matemáticas desde 2018.
-      </p>
-    </section>
+  <div class="bloque">
+    <p class="empresa">Gráfica Creativa SpA</p>
+    <p class="lugar">Imprenta familiar · Santiago · clientes públicos (Mercado Público) y privados</p>
 
-    <section>
-      <h2>Proyectos</h2>
+    <div class="fila"><span class="cargo">Análisis de datos y desarrollo de sistemas internos</span><span class="fecha">2026 – presente</span></div>
+    <ul>
+      <li><b>Radar de oportunidades.</b> Revisa varias veces al día las Compras Ágiles y licitaciones de
+        Mercado Público mediante su API y asigna a cada una una nota A, B o C con una regresión logística
+        entrenada con las cotizaciones de la empresa. En meses que el modelo no vio: AUC 0,67; con nota A
+        se ganó el 20 % de las veces y con nota C, el 5 %.</li>
+      <li><b>Precio sugerido.</b> Regresión ridge sobre unas 148.000 líneas de órdenes de compra públicas,
+        ajustada con nuestro historial de precios y evaluada prediciendo cada venta sin haberla visto.</li>
+      <li><b>Reporte mensual</b> automático con los datos abiertos de ChileCompra, sobre una base SQLite que
+        guarda el origen de cada número. Lo validé reproduciendo sin diferencias un informe anterior.</li>
+      <li><b>Aplicación web de administración</b> (Cloudflare Pages, D1 y Access) con la que mi madre lleva
+        trabajos, facturas, comisiones, precios y etiquetas de despacho; la usan 4 personas. Replica la
+        planilla de costos en Excel y entrega las mismas cifras que el tablero financiero.</li>
+      <li><b>Tablero financiero</b> que lee cartolas bancarias (PDF y Excel), registros del SII (RCV y F29)
+        y las planillas de cada trabajo, y concilia banco y facturas sin contar nada dos veces. Tiene 26
+        pruebas automáticas.</li>
+      <li><b>Cotizador</b> con las tarifas reales del taller: calcula pliegos, planchas y tirajes y propone
+        un precio. En dos trabajos ya hechos quedó a menos de 1 % de su costo real. Incluye una guía de
+        24 páginas para aprender a cotizar.</li>
+      <li><b>Postulaciones:</b> llenado automático de formularios (Word, PDF y Excel) y lectura de bases con IA,
+        probado con más de 100 compras reales. Además, el sitio web <a href="https://graficacreativaspa.cl">graficacreativaspa.cl</a>.</li>
+    </ul>
+    <p class="nota">Desarrollé estos sistemas con asistencia de IA (Claude Code): definí lo que debían hacer,
+      diseñé las pruebas y validé los resultados.</p>
 
-      <div class="proy">
-        <div class="ent-cab">
-          <div class="ent-tit"><a href="https://github.com/cpizarrof/deprivacion-multivariante">La deprivación urbana en Chile no es unidimensional</a></div>
-          <div class="ent-fecha">2026</div>
-        </div>
-        <div class="ent-org">Curso Métodos Multivariantes · Universidad de Santiago de Chile</div>
-        <p class="met">
-          Análisis multivariante de las zonas censales urbanas del Censo 2017 para evaluar
-          cuánta información conserva un índice sintético que resume la deprivación
-          territorial en un solo número. El trabajo muestra que el fenómeno no es
-          unidimensional e identifica grupos de zonas que el índice no alcanza a distinguir.
-        </p>
-        <p class="tec">Componentes principales · análisis factorial · MANOVA · clustering jerárquico y particional · análisis de correspondencia · regresión logística y curva ROC · R, Python, Quarto, reveal.js</p>
-        <p class="liga"><a href="https://cpizarrof.github.io/deprivacion-multivariante/">cpizarrof.github.io/deprivacion-multivariante</a></p>
-      </div>
-
-      <div class="proy">
-        <div class="ent-cab">
-          <div class="ent-tit"><a href="https://github.com/cpizarrof/pgip-psicometria">Percepción de la Gestión Institucional Preventiva</a></div>
-          <div class="ent-fecha">2026</div>
-        </div>
-        <div class="ent-org">Curso Diseño y Análisis de Encuestas · Universidad de Santiago de Chile</div>
-        <p class="met">
-          Construcción y validación de una escala que mide cómo los apoderados perciben la
-          gestión preventiva de la violencia escolar, a partir del Simce 2024. Incluye el
-          ensamblaje de la base desde tres fuentes administrativas y el contraste de
-          diferencias entre grupos sociales y territoriales.
-        </p>
-        <p class="tec">Teoría Clásica de los Tests · análisis factorial confirmatorio (lavaan) · invarianza de medida · validez convergente y divergente · R, Quarto</p>
-        <p class="liga"><a href="https://cpizarrof.github.io/pgip-psicometria/">cpizarrof.github.io/pgip-psicometria</a></p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Experiencia</h2>
-
-      <div class="ent">
-        <div class="ent-cab">
-          <div class="ent-tit">Asistente administrativo</div>
-          <div class="ent-fecha">2019 — presente</div>
-        </div>
-        <div class="ent-org">Servicios Gráficos Creativa Limitada</div>
-        <p class="ent-txt">
-          Control de cobranza y facturación, pago a proveedores y apoyo en el área de
-          producción. Jornada part-time compatibilizada con estudios de jornada completa.
-        </p>
-      </div>
-
-      <div class="ent">
-        <div class="ent-cab">
-          <div class="ent-tit">Profesor particular de matemáticas</div>
-          <div class="ent-fecha">2018 — presente</div>
-        </div>
-        <div class="ent-org">Trabajo independiente</div>
-        <p class="ent-txt">
-          Clases de matemáticas para estudiantes de educación básica, media y superior.
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Formación</h2>
-
-      <div class="ent">
-        <div class="ent-cab">
-          <div class="ent-tit">Ingeniería Estadística</div>
-          <div class="ent-fecha">2023 — presente</div>
-        </div>
-        <div class="ent-org">Universidad de Santiago de Chile</div>
-      </div>
-
-      <div class="ent">
-        <div class="ent-cab">
-          <div class="ent-tit">Enseñanza básica y media</div>
-          <div class="ent-fecha">2003 — 2015</div>
-        </div>
-        <div class="ent-org">Colegio Hispano Americano</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Certificaciones</h2>
-
-      <div class="ent">
-        <div class="ent-cab">
-          <div class="ent-tit">Desarrollo Web Full Stack Java</div>
-          <div class="ent-fecha">2025</div>
-        </div>
-        <div class="ent-org">Talento Digital para Chile</div>
-      </div>
-
-      <div class="ent">
-        <div class="ent-cab">
-          <div class="ent-tit">Escuela de Formación Pedagógica de Ayudantes</div>
-          <div class="ent-fecha">2021</div>
-        </div>
-        <div class="ent-org">Facultad de Ciencias, Universidad de Santiago de Chile</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Herramientas</h2>
-      <dl class="hab">
-        <dt>Análisis</dt>
-        <dd>R (tidyverse, psych, lavaan, cluster) · Python (pandas, scikit-learn, statsmodels)<br>SQL</dd>
-        <dt>Reportes</dt>
-        <dd>Quarto · reveal.js · ggplot2 · LaTeX</dd>
-        <dt>Versionado</dt>
-        <dd>Git · GitHub · GitHub Pages</dd>
-        <dt>Otras</dt>
-        <dd>Stata · Matlab · Java · Excel</dd>
-        <dt>Idiomas</dt>
-        <dd>Español nativo · Inglés intermedio</dd>
-      </dl>
-    </section>
-
+    <div class="fila" style="margin-top:6pt"><span class="cargo">Asistente administrativo</span><span class="fecha">2019 – 2026</span></div>
+    <p>Cobranza, facturación, pago a proveedores y apoyo en producción, en jornada parcial junto con los estudios.</p>
   </div>
 
-  <div class="pie">
-    <a class="descarga" href="CV-Carlos-Pizarro.pdf" download>Descargar en PDF</a>
+  <div class="bloque">
+    <div class="fila"><span class="cargo">Profesor particular de matemáticas</span><span class="fecha">2018 – presente</span></div>
+    <p>Clases a estudiantes de enseñanza básica, media y universitaria.</p>
   </div>
+</section>
 
-</div>
+<section class="proy">
+  <h2>Proyectos académicos</h2>
+  <div class="bloque">
+    <div class="fila"><span><span class="cargo">La deprivación urbana en Chile no es unidimensional</span> · Métodos Multivariantes</span><span class="fecha">2026</span></div>
+    <p>Con 4.843 zonas censales del Censo 2017 muestro que el índice oficial resume solo una de tres dimensiones.
+      ACP, análisis factorial, MANOVA, clustering y regresión logística en R y Python.
+      <span class="enlace">cpizarrof.github.io/deprivacion-multivariante</span></p>
+  </div>
+  <div class="bloque">
+    <div class="fila"><span><span class="cargo">Percepción de la gestión preventiva en colegios</span> · Diseño y Análisis de Encuestas</span><span class="fecha">2026</span></div>
+    <p>Escala validada con 171.797 respuestas del Simce 2024, uniendo tres bases administrativas. Análisis factorial
+      confirmatorio (lavaan) e invarianza de medida. <span class="enlace">cpizarrof.github.io/pgip-psicometria</span></p>
+  </div>
+</section>
 
+<section>
+  <h2>Formación</h2>
+  <div class="fila"><span><span class="cargo">Ingeniería Estadística</span>, Universidad de Santiago de Chile</span><span class="fecha">2023 – presente</span></div>
+  <div class="fila"><span>Desarrollo Web Full Stack Java, Talento Digital para Chile</span><span class="fecha">2025</span></div>
+  <div class="fila"><span>Escuela de Formación Pedagógica de Ayudantes, Facultad de Ciencias, USACH</span><span class="fecha">2021</span></div>
+</section>
+
+<section class="habil">
+  <h2>Herramientas</h2>
+  <p><b>Estadística y datos:</b> R (tidyverse, lavaan, psych), Python (pandas, scikit-learn, statsmodels), SQL y SQLite, Stata</p>
+  <p><b>Web y automatización:</b> JavaScript, HTML y CSS, Cloudflare (Pages, D1, Workers), APIs REST, Excel con Python</p>
+  <p><b>Reportes y versiones:</b> Quarto, LaTeX, Git y GitHub · <b>Idiomas:</b> español nativo, inglés intermedio</p>
+</section>
+
+<p><a class="descarga" href="CV-Carlos-Pizarro.pdf" download>Descargar en PDF</a></p>
 </body>
 </html>
