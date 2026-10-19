@@ -35,8 +35,9 @@
   header { border-bottom: 1.4pt solid var(--tinta); padding-bottom: 7pt; margin-bottom: 9pt; }
   h1 { font: 600 21pt/1.1 "Source Serif 4", Georgia, serif; margin: 0 0 2pt; letter-spacing: .1pt; }
   .titular { font-size: 10.5pt; margin: 0 0 4pt; }
-  .contacto { color: var(--suave); margin: 0; }
-  .contacto span + span::before { content: "·"; margin: 0 6pt; color: var(--linea); }
+  .contacto { color: var(--suave); margin: 0; font-size: 9pt; }
+  .contacto > span { white-space: nowrap; }
+  .contacto span + span::before { content: "·"; margin: 0 4.5pt; color: var(--linea); }
   h2 {
     font: 600 8.6pt/1 "Source Sans 3", Arial, sans-serif; text-transform: uppercase; letter-spacing: 1.3pt;
     color: var(--acento); margin: 9pt 0 4pt; padding-bottom: 2.5pt; border-bottom: .6pt solid var(--linea);
